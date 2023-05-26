@@ -2,7 +2,7 @@ public class GameEntity {
     int healthHB;
     int damageHB;
 
-    WeaponType weaponType;
+    Weapon weaponType;
 
 
 
@@ -14,11 +14,11 @@ public class GameEntity {
         this.damageHB = damageHB;
     }
 
-    public WeaponType getWeaponType() {
+    public Weapon getWeaponType() {
         return weaponType;
     }
 
-    public void setWeaponType(WeaponType weaponType) {
+    public void setWeaponType(Weapon weaponType) {
         this.weaponType = weaponType;
     }
 
@@ -32,7 +32,7 @@ public class GameEntity {
     }
 
     public String info (){
-        return "Boss Health: "+this.healthHB + " damage: "+ this.damageHB+ " weapon: "+ this.weaponType;
+        return "Boss Health: "+this.healthHB + ", damage: "+ this.damageHB+ ", weapon name: "+ this.weaponType.getNameOfWeapon() + ", weapon type: "+ this.weaponType.getTypeOfWeapon() ;
     }
 }
 
